@@ -1,0 +1,51 @@
+/* Styling for the calculator */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f5f9; /* Calming background color */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.calculator {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add a subtle shadow for depth */
+}
+
+#result {
+  font-size: 24px;
+  width: 100%;
+  margin-bottom: 10px;
+  padding: 5px;
+}
+
+.buttons {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+}
+
+.buttons button:nth-child(17),
+.buttons button:nth-child(16),
+.buttons button:nth-child(15),
+.buttons button:nth-child(14) {
+  grid-column: span 1;
+}
+
+button {
+  font-size: 20px;
+  padding: 10px;
+  background-color: #f2f2f2;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #e6e6e6;
+}
